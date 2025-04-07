@@ -1,0 +1,86 @@
+##############
+# .NET / C#  #
+##############
+
+# Compiled binaries
+**/bin/
+**/obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build artefacts
+*.dll
+*.exe
+*.app
+*.cache
+*.pdb
+*.mdb
+*.nupkg
+*.msi
+
+# Others
+*.db
+*.bak
+*.log
+
+# Test results
+TestResults/
+*.coverage
+*.coveragexml
+
+######################
+# App Configuration  #
+######################
+
+# Configs sensíveis (não commitar)
+/src/HabitumAPI/appsettings.json
+**/src/HabitumAPI/appsettings.json
+**/appsettings.json
+**/appsettings.*.json
+
+##################
+# React Native / Expo
+##################
+
+# Dependências
+node_modules/
+**/.expo/
+**/.expo-shared/
+
+# Cache/Artefatos do Expo
+.expo/
+dist/
+web-build/
+
+# Android/iOS
+android/
+ios/
+**/Podfile.lock
+**/android/gradlew
+**/android/gradlew.bat
+
+# Logs e métricas
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+metro-cache/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

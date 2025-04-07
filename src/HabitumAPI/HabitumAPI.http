@@ -1,0 +1,20 @@
+@HabitumAPI_HostAddress = https://localhost:7138
+
+GET {{HabitumAPI_HostAddress}}/users
+
+###
+
+POST {{HabitumAPI_HostAddress}}/users
+Content-Type: application/json
+
+{
+  "email": "teste@teste",
+  "password": "teste123"
+}
+
+###
+
+@id=009
+GET {{HabitumAPI_HostAddress}}/users/{{id}}
+
+###
