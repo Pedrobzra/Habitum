@@ -1,4 +1,4 @@
-@HabitumAPI_HostAddress = https://localhost:7138
+@HabitumAPI_HostAddress = http://localhost:5100
 
 GET {{HabitumAPI_HostAddress}}/users
 
@@ -16,5 +16,39 @@ Content-Type: application/json
 
 @id=009
 GET {{HabitumAPI_HostAddress}}/users/{{id}}
+
+###
+
+POST {{HabitumAPI_HostAddress}}/habits
+Content-Type: application/json
+
+{
+  "Name": "teste",
+  "Notifications": true,
+  "Frequency": 0,
+  "AlertHour": true,
+  "Goal": "2 metros de nado"
+}
+
+###
+
+POST {{HabitumAPI_HostAddress}}/todo
+Content-Type: application/json
+
+{
+  "Name": "teste",
+  "Notifications": true,
+  "StartDate": "2025-04-17T03:02:38.397Z",
+  "EndDate": "2025-04-17T03:02:38.397Z"
+}
+
+###
+
+POST {{HabitumAPI_HostAddress}}/users
+Content-Type: application/json
+
+{
+  //RegisterUserDTO
+}
 
 ###

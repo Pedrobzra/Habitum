@@ -36,52 +36,57 @@ export default function StartHabitOpt({ source, description }: Props) {
 
 const styles = StyleSheet.create({
   container: {
+    flexDirection: "row",
     position: "relative",
-    borderWidth: 4,
     borderRadius: 15,
-    borderColor: "#D9D9D9",
-    padding: 5,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
 
-    width: 140,
-    height: 140,
+    borderColor: "#68D5B9",
+    borderWidth: 2,
+    padding: 5,
+
+    alignItems: "center",
+    gap: 10,
+
+    width: 290,
+    height: 60,
   },
   containerActive: {
+    flexDirection: "row",
     position: "relative",
-    borderWidth: 4,
+    borderWidth: 2,
     borderRadius: 15,
-    borderColor: "#68D5B9",
-    padding: 5,
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    borderColor: "white",
 
-    width: 140,
-    height: 140,
+    padding: 5,
+
+    alignItems: "center",
+    gap: 10,
+
+    width: 290,
+    height: 60,
   },
   checkedIcon: {
     position: "absolute",
-    top: -16,
+    top: 12,
     zIndex: 999,
-    left: 50,
+    left: 270,
     height: 30,
     width: 30,
   },
   imgContainer: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
     overflow: "hidden",
-    width: 100,
   },
   img: {
-    width: "70%",
-    height: "70%",
+    width: "15%",
+    height: "87%",
     resizeMode: "cover",
   },
   description: {
     fontWeight: "700",
     textAlign: "center",
+    fontSize: 15,
+    color: "white",
   },
 });

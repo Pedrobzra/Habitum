@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 import { Box } from "@/components/ui/box";
 
 type Props = {
-  text: string;
+  text?: string;
 };
 
 export default function Habitbox({

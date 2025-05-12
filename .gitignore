@@ -35,46 +35,12 @@ yarn-error.*
 
 app-example
 
-##############
-# .NET / C#  #
-##############
-**/bin/
-**/obj/
-
-.vs/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-
-*.dll
-*.exe
-*.app
-*.cache
-*.pdb
-*.mdb
-*.nupkg
-*.msi
-
-*.db
-*.bak
-*.log
-
-TestResults/
-*.coverage
-*.coveragexml
-
-######################
-# App Configuration  #
-######################
-/src/HabitumAPI/appsettings.json
-**/src/HabitumAPI/appsettings.json
-**/appsettings.json
-**/appsettings.*.json
-
 ##################
 # React Native / Expo
 ##################
 node_modules/
 **/.expo/
 **/.expo-shared/
+src/habitum/api/apisettings.ts
+
+/src/HabitumAPI/appsettings.Development.json

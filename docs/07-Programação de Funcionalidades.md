@@ -2,22 +2,22 @@
 
 ## 📌 Última vez atualizado
 
-> Atualizado em: `06/04/2025`
+> Atualizado em: `11/05/2025`
 
 ## 🔧 Desenvolvimento Atual de Telas
 
 | Tela                              | Status                 | Responsável        |
 |-----------------------------------|------------------------|--------------------|
-| Tela Inicial                      | ✅ Concluída           | Pedro Bezerra     |
-| Tela de Login                     | ✅ Concluída           | Pedro Bezerra     |
-| Tela de Registro                  | ✅ Concluída           | Matheus Zeita     |
-| Tela de Configuração da Conta     | ✅ Concluída           | Lucas Toti     |
-| Tela Principal                    | ✅ Concluída           | Pedro Machado     |
-| Tela de Predefinições de Hábitos  | ✅ Concluída           | Luan Bezerra     |
-| Tela de Criação de Hábito         | 📋 Backlog             |      |
-| Tela da Comunidade                | 📋 Backlog             |      |
-| Tela de Desafios                  | 📋 Backlog             |    |
-| Tela de Perfil                    | 📋 Backlog             |     |
+| Tela Inicial                      | ✅ Concluída           | Pedro Bezerra, Luan Bezerra   |
+| Tela de Login                     | ✅ Concluída           | Pedro Bezerra, Luan Bezerra   |
+| Tela de Registro                  | ✅ Concluída           | Matheus Zeita, Luan Bezerra   |
+| Tela de Configuração da Conta     | ✅ Concluída           | Lucas Toti, Luan Bezerra        |
+| Tela Principal                    | ✅ Concluída           | Pedro Machado, Lucas Toti     |
+| Tela de Predefinições de Hábitos  | ✅ Concluída           | Luan Bezerra      |
+| Tela de Criação de Hábito         | ✅ Concluída           | Pedro Bezerra     |
+| Tela da Comunidade                | ✅ Concluída           | Lucas Toti        |
+| Tela de Desafios                  | ✅ Concluída           | Pedro Machado     |
+| Tela de Perfil                    | ✅ Concluída           | Matheus Zeita     |
 
 
 ## 🔧 Desenvolvimento Atual de Funcionalidades
@@ -29,30 +29,69 @@
 
 | Funcionalidade | Descrição | Status | Responsável |
 |----------------|-----------|--------|-------------|
-| Criação de Conta | Permite que o usuário crie uma nova conta (RF-01) | 📋 Backlog |  |
-| Login de Usuário | Permite que o usuário faça login em uma conta existente (RF-02) | 📋 Backlog |  |
-| Cadastro de Hábitos | Permite que o usuário cadastre novos hábitos e tarefas (RF-03) | 📋 Backlog |  |
-| Customização de Hábitos | Permite a personalização de hábitos pelo usuário (RF-04) | 📋 Backlog |  |
-| Exclusão de Hábitos | Permite que o usuário exclua hábitos cadastrados (RF-05) | 📋 Backlog |  |
+| Criação de Conta | Permite que o usuário crie uma nova conta (RF-01) | ✅ Concluída | Lucas Toti, Luan Bezerra |
+| Login de Usuário | Permite que o usuário faça login em uma conta existente (RF-02) | ✅ Concluída | Luan Bezerra |
+| Cadastro de Hábitos | Permite que o usuário cadastre novos hábitos e tarefas (RF-03) | ✅ Concluída | Pedro Bezerra |
+| Customização de Hábitos | Permite a personalização de hábitos pelo usuário (RF-04) | ✅ Concluída | Pedro Machado |
+| Exclusão de Hábitos | Permite que o usuário exclua hábitos cadastrados (RF-05) | ✅ Concluída | Pedro Machado |
+| Marcar Tarefa como Concluída | Permite marcar tarefas como feitas (RF-15) | ✅ Concluída | Lucas Toti |
+| Mostrar Tarefas Diárias/Semanais | Exibe as atividades programadas pelo usuário (RF-13) | ✅ Concluída | Lucas Toti |
 | Temporizador de Tarefas | Fornece um cronômetro para realização de tarefas (RF-06) | 📋 Backlog |  |
 | Lembretes de Tarefas | Envia notificações sobre tarefas programadas (RF-07) | 📋 Backlog |  |
-| Hábitos Predefinidos | Sugere hábitos com base na escolha do usuário (RF-08) | 📋 Backlog |  |
+| Hábitos Predefinidos | Sugere hábitos com base na escolha do usuário (RF-08) | 📋 Backlog | |
 | Desafios e Recompensas | Oferece desafios e recompensas como incentivo (RF-09) | 📋 Backlog |  |
 | Seguir Usuários | Permite que o usuário siga outros usuários (RF-10) | 📋 Backlog |  |
 | Sistema de Ranqueamento | Exibe classificação dos usuários (RF-11) | 📋 Backlog |  |
 | Sistema de Pontuação | Atribui pontos para hábitos/tarefas concluídas (RF-12) | 📋 Backlog |  |
-| Mostrar Tarefas Diárias/Semanais | Exibe as atividades programadas pelo usuário (RF-13) | 📋 Backlog |  |
 | Compartilhamento de Resultados | Permite que o usuário compartilhe seus resultados (RF-14) | 📋 Backlog |  |
-| Marcar Tarefa como Concluída | Permite marcar tarefas como feitas (RF-15) | 📋 Backlog |  |
-| Contador de Sequência | Exibe a sequência de dias com hábitos cumpridos (RF-16) | 📋 Backlog |  |
+| Contador de Sequência | Exibe a sequência de dias com hábitos cumpridos (RF-16) | 🚧 Em andamento | Matheus Zeíta |
 
+## 🔎 Evidências de Implementação das Funcionalidades de CRUD e Autenticação
 
----
+### Evidência de CRUD
+- Na fase atual do projeto temos as funções de CRUD implementadas, são elas: Criar, Exibir, Editar e Deletar.
+![image](https://github.com/user-attachments/assets/38f908b1-f770-452f-97c3-9c3e70a1b633)
+
+- As evidências a seguir utilizam o swagger para fazer a validação e mostrar elas que estão funcionando como deveriam.
+
+#### Evidência de CRUD #1 - Criar
+> Criação de um novo hábito.
+
+![image](https://github.com/user-attachments/assets/ca9834ca-cc99-452d-b123-acf0aaad0240)
+
+#### Evidência de CRUD #2 - Exibir
+> Exibe detalhes de um hábito.
+
+![image](https://github.com/user-attachments/assets/3e05c0b4-a04a-4687-b857-0e2271fa0c0a)
+
+#### Evidência de CRUD #3 - Editar
+> Editar um hábito já existente.
+
+![image](https://github.com/user-attachments/assets/8ea4dae4-a7b8-41dd-a5ab-08cb67a22e3f)
+
+#### Evidência de CRUD #4 - Deletar
+> Deleta i, hábito ja existente.
+
+![image](https://github.com/user-attachments/assets/46092a9b-5b9c-47cb-81f8-6005a9b8f964)
+
+### Evidência de autenticação
+- Implementamos autenticação via JWT Bearer neste projeto.
+- As evidências a seguir utilizam o swagger para fazer a validação e mostrar elas que estão funcionando como deveriam.
+
+#### Evidência de autenticação
+> Login de um usuário retorna um token.
+
+![image](https://github.com/user-attachments/assets/2090563f-2acf-4145-a0b6-db6c4f37c989)
+
+> Verificando se o token é válido.
+
+![image](https://github.com/user-attachments/assets/71c72f57-f97b-4d58-ada6-400decafe6d2)
+
 
 ## 📊 Gerenciamento Visual do Trabalho Atual
 
 - **Quadro Kanban:** [Habitum KANBAN]([#](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/1696/views/1))
-- **Sprint atual:** Etapa 2 - Continuidade da Elaboração do Projeto da Solução e Início do Desenvolvimento da Solução (10/03/25 a 06/04/25)
+- **Sprint atual:** Etapa 3 - Continuidade do Desenvolvimento da Solução: Desenvolvimento da aplicação móvel (Parte 1) (06/04/25 a 11/05/25)
 
 ---
 
@@ -60,11 +99,11 @@
 
 | Membro            | Contribuições                                                                                     |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| **Lucas Toti**          | Responsável pela elaboração da arquitetura da solução, definição de metodologias, projeto de interface, implementação da tela de configuração da conta e configuração inicial da API backend utilizando princípios SOLID. |
-| **Matheus Zeita**  | Contribuiu com a definição da arquitetura da solução e implementação da tela de registro.         |
-| **Pedro Machado**        | Responsável pela elaboração de indicadores de desempenho, definição de metodologias e implementação da tela principal. |
-| **Luan Bezerra**             | Atuou na definição da arquitetura da solução, projeto de interface, implementação da tela de predefinições de hábitos e realizou refatorações em outras telas. |
-| **Pedro Bezerra**        | Participou da definição da arquitetura da solução, projeto de interface, implementação da tela inicial e da tela de login. |
+| **Lucas Toti**    | Display User Habits/Tasks, RF-01 Create User, Community.tsx, Index.tsx, AccountSettings.tsx, System Architecture, API Refactor and Bugfixes |
+| **Matheus Zeita** | Profile.tsx |
+| **Pedro Machado** | Challenges.tsx, RF04 - Update Habit, RF05 - Delete Habit |
+| **Luan Bezerra**  | RF01 - Create User(Auth part), RF02 - Login Authetication, Refactor in Auth Pages , Evidence of CRUD and Auth implementation, |
+| **Pedro Bezerra** | RF03 - Create Habit, Createhabit.tsx |
 
 ---
 
@@ -72,12 +111,11 @@
 
 | Membro            | Comentários                                                                                         |
 |-------------------|-----------------------------------------------------------------------------------------------------|
-| **Lucas Toti**          | Demonstrou grande envolvimento técnico, especialmente na organização da estrutura do backend e na definição dos padrões de desenvolvimento. |
-|**Matheus Zeita**  | Realizou a entrega da funcionalidade proposta; recomenda-se atenção aos prazos nas próximas etapas, uma vez que houve certa demora entre a criação da branch e a finalização da implementação. |
-| **Pedro Machado**        | Houve dificuldades técnicas com a ferramenta Expo Go, o que comprometeu momentaneamente o cronograma; porém a entrega foi realizada conforme o esperado. |
-| **Luan Bezerra**            | Apesar de compromissos paralelos, manteve a consistência nas entregas e apresentou implementações de boa qualidade, além de colaborar com ajustes em outras telas. |
-| **Pedro Bezerra**       | Responsável pelas primeiras entregas de interface do projeto, contribuindo para a estrutura inicial do aplicativo. |
+| **Lucas Toti**    | O efeito borboleta em forma de dev: muda um botão e magicamente surgem cinco pastas novas, três bugs resolvidos que ninguém notou antes e um sistema ainda mais robusto. |
+|**Matheus Zeita**  | Ninja silencioso. Some por dias, mas quando aparece, dropa um commit do nada e sai andando como se nada tivesse acontecido. Misterioso, porém funcional.|
+| **Pedro Machado** | É o cara que só queria arrumar um botão e acabou descobrindo que o login quebra quando é terça-feira e chove. Insubstituível na arte de achar problema onde ninguém olha.|
+| **Luan Bezerra**  | Cada botão desalinhado é uma ofensa pessoal. O único capaz de abrir o Figma só pra dizer “isso aqui tá feio”. Só falta tatuar “padding é vida” no braço.|
+| **Pedro Bezerra** | Entregou o MVP antes de todo mundo pensar em abrir o VS Code. Agora virou o fiscal de produtividade alheia — se você atrasou, ele sabe. Uma mistura de dev com gerente de projeto não-oficial.|
 
----
 
 

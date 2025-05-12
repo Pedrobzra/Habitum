@@ -1,15 +1,22 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace HabitumAPI.DTOs.User;
-
-public class RegisterUserDTO
+namespace HabitumAPI.DTOs.User
 {
-    [Required(ErrorMessage = "E-mail é obrigatório")]
-    [EmailAddress(ErrorMessage = "E-mail inválido")]
-    [MaxLength(100, ErrorMessage = "E-mail muito longo!")]
-    public required string Email { get; set; }
+    public class RegisterUserDTO
+    {
+        [Required(ErrorMessage = "Campo obrigatório!")]
+        public required string Name { get; set; }
 
-    [Required(ErrorMessage = "Senha é obrigatória")]
-    [MinLength(8, ErrorMessage = "Senha deve ter pelo menos 8 dígitos")]
-    public required string Password { get; set; }
+        [MaxLength(100)]
+        [EmailAddress(ErrorMessage = "Email inválido!")]
+        public required string Email { get; set; }
+
+        [Required(ErrorMessage = "Campo obrigatório!")]
+        [MaxLength(255)]
+        [RegularExpression(
+            @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&/#^()\-_=+{}[\]:;""'<>,.|\\]).{8,}$",
+            ErrorMessage = "A senha deve conter no mínimo 8 caracteres, incluindo maiúsculas, minúsculas, número e símbolo."
+        )]
+        public required string Password { get; set; }
+    }
 }

@@ -1,33 +1,28 @@
-import { Stack } from "expo-router";
-
+import { AuthProvider } from "@/api/authApi";
 import "@/global.css";
-import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+import { Stack } from "expo-router";
 
 export default function RootLayout() {
   return (
-    <GluestackUIProvider mode="light">
+    <AuthProvider>
       <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="(auth)/start" options={{ headerShown: false }} />
-        <Stack.Screen name="(auth)/login" options={{ title: "Login" }} />
-        <Stack.Screen name="(auth)/register" options={{ title: "Cadastro" }} />
         <Stack.Screen
-          name="(auth)/selectImg"
-          options={{
-            presentation: "modal",
-            title: "Selecionar Foto",
-          }}
-        />
+          name="(protected)"
+          options={{ headerShown: false }}
+        ></Stack.Screen>
         <Stack.Screen
-          name="(auth)/accountsetup"
-          options={{ title: "Configuração da Conta" }}
-        />
+          name="login"
+          options={{ headerShown: false }}
+        ></Stack.Screen>
         <Stack.Screen
-          name="(habit)/createhabit"
-          options={{ title: "Crie um Hábito" }}
-        />
-        <Stack.Screen name="+not-found" options={{ headerShown: false }} />
+          name="register"
+          options={{ headerShown: false }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name="start"
+          options={{ headerShown: false, animation: "none" }}
+        ></Stack.Screen>
       </Stack>
-    </GluestackUIProvider>
+    </AuthProvider>
   );
 }

@@ -1,21 +1,21 @@
 # Introdução
 
- A criação de hábitos positivos é essencial tanto para o desenvolvimento pessoal quanto para o profissional, aumentando nossa eficiência e promovendo o bem-estar físico e mental. Entretanto, o avanço da tecnologia trouxe um excesso de informações e distrações, tornando a procrastinação mais comum e dificultando a realização de objetivos. Esse cenário gera frustração e pode resultar no abandono frequente de metas. Diante disso, um aplicativo móvel acessível a qualquer momento pode auxiliar o usuário na construção de hábitos saudáveis, oferecendo lembretes, acompanhamento de progresso e recompensas para incentivar a constância.
+ Desenvolver hábitos positivos é fundamental tanto para o crescimento pessoal quanto profissional, pois melhora a eficiência e promove o bem-estar físico e mental. No entanto, o avanço da tecnologia trouxe um excesso de informações e distrações, tornando a procrastinação mais frequente e dificultando a conquista de objetivos. Esse cenário gera frustração e pode levar ao abandono constante de metas. Para contornar esse desafio, um aplicativo móvel acessível a qualquer momento pode ajudar na construção de hábitos saudáveis, fornecendo lembretes, acompanhamento do progresso e recompensas que incentivam a constância.
 
 ## Problema
- O avanço da tecnologia intensificou a procrastinação ao expor as pessoas a um excesso de informações e distrações. A pandemia da Covid-19 agravou esse cenário, elevando os casos de ansiedade e dificultando a concentração. Procrastinar é adiar tarefas importantes, isso* ocorre quando tarefas importantes são adiadas em favor de atividades de gratificação instantânea*, como redes sociais e vídeos curtos, como redes sociais ou vídeos curtos. Isso gera estresse, culpa, perda de produtividade e a sensação constante de falta de tempo. O desafio está na dificuldade de manter o foco em hábitos saudáveis, diante de tantos estímulos rápidos e viciantes que competem pela nossa atenção.
+ O avanço da tecnologia tem intensificado a procrastinação ao expor as pessoas a um excesso de informações e distrações. A pandemia da Covid-19 agravou esse cenário, aumentando os níveis de ansiedade e dificultando a concentração. Procrastinar significa *adiar tarefas importantes, substituindo-as por atividades de gratificação instantânea*, como o uso excessivo de redes sociais e o consumo de vídeos curtos. Esse hábito resulta em estresse, culpa, queda na produtividade e uma constante sensação de falta de tempo. O grande desafio está em manter o foco e cultivar hábitos saudáveis em meio a tantos estímulos rápidos e viciantes que competem por nossa atenção.
 
 ## Objetivos
 
- O aplicativo tem como objetivo auxiliar na criação e manutenção de hábitos saudáveis de forma consistente. O aplicativo oferece ferramentas como lembretes, monitoramento de progresso e um sistema de recompensas para manter o usuário engajado e comprometido com seus objetivos. Dessa forma, ele transforma a construção de hábitos em uma experiência mais envolvente e eficaz.
- Objetivos específicos:
-- Facilitar a criação de hábitos
-- Incentivar o comprometimento com recompensas
-- Manter o usuário engajado por meio de lembretes personalizados
+ O aplicativo foi desenvolvido para auxiliar na criação e manutenção de hábitos saudáveis de maneira consistente. Para isso, oferece recursos como lembretes, monitoramento de progresso e um sistema de recompensas, incentivando o engajamento e o comprometimento do usuário com seus objetivos. Assim, a construção de hábitos se torna uma experiência mais envolvente e eficaz.
+ **Objetivos específicos:**
+- Tornar a criação de hábitos mais simples e acessível.
+- Estimular o comprometimento por meio de recompensas.
+- Garantir o engajamento do usuário com lembretes personalizados.
 
 ## Justificativa
 
- Iniciar uma nova rotina pode ser desafiador e frustrante. Para reduzir a procrastinação, este projeto propõe um aplicativo baseado em estratégias comprovadas que incentivam disciplina e consistência. Destinado a indivíduos que lutam contra a procrastinação ou buscam maior produtividade, o app se fundamenta em estudos sobre estratégias eficazes para a criação e manutenção de hábitos.
+ Iniciar uma nova rotina pode ser desafiador e, muitas vezes, frustrante. Para combater a procrastinação e fortalecer a disciplina, este projeto propõe um aplicativo baseado em estratégias comprovadas que incentivam a consistência. Destinado para pessoas que enfrentam dificuldades em manter hábitos ou desejam aumentar sua produtividade, o app se fundamenta em estudos sobre estratégias eficazes para a criação e manutenção de hábitos.
 
 ## Público-Alvo
 

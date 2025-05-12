@@ -3,27 +3,25 @@ using HabitumAPI.Utils.Mappers;
 using HabitumAPI.Utils.Security;
 using HabitumAPI.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HabitumAPI.Services
 {
-    public class UserService : IUserService
+    public class UserService(HabitumContext context) : IUserService
     {
-        private readonly HabitumContext _context;
-        public UserService(HabitumContext context)
-        {
-            _context = context;
-        }
+        private readonly HabitumContext _context = context;
 
-        public async Task<GetUserDTO> CreateUserAsync(RegisterUserDTO dto)
+        public async Task<GetUserDTO> RegisterUserAsync(RegisterUserDTO dto)
         {
             if (await _context.Users.AnyAsync(u => u.Email == dto.Email))
             {
-                throw new InvalidOperationException("E-mail já cadastrado.");
+                throw new InvalidOperationException("E-mail ou nome de usuário já cadastrado.");
             }
 
             var user = new User
             {
                 Email = dto.Email,
+                Name = dto.Name,
                 Password = PasswordHasher.Hash(dto.Password),
             };
 

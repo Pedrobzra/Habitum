@@ -1,23 +1,21 @@
 import { StyleSheet, View, Text } from "react-native";
-import { FontAwesome6 } from "@expo/vector-icons";
+import { FontAwesome6, Ionicons } from "@expo/vector-icons";
 import { Button, ButtonText, ButtonIcon } from "@/components/ui/button";
-import { CheckIcon, ChevronRightIcon } from "@/components/ui/icon";
+import { ChevronRightIcon } from "@/components/ui/icon";
 import { HStack } from "@/components/ui/hstack";
 import { router } from "expo-router";
-import { useRoute } from "@react-navigation/native";
-import {
-  Checkbox,
-  CheckboxIndicator,
-  CheckboxIcon,
-} from "@/components/ui/checkbox";
+
+type IoniconsKeys = keyof typeof Ionicons.glyphMap;
+type FontAwesome6Keys = keyof typeof FontAwesome6.glyphMap;
 
 type Props = {
   text: string;
-  icon: string;
+  icon: IoniconsKeys | FontAwesome6Keys;
   color?: string;
   theme?: string;
   time?: string;
   unity?: string;
+  onPress?: () => void;
 };
 
 export default function HabitBtn({
@@ -27,6 +25,7 @@ export default function HabitBtn({
   theme,
   time,
   unity,
+  onPress,
 }: Props) {
   if (theme === "presets") {
     return (
@@ -34,13 +33,13 @@ export default function HabitBtn({
         <Button
           action="secondary"
           style={{ backgroundColor: "#F0F0F0" }}
-          onPress={() => router.push("/(habit)/createhabit")}
+          onPress={() => router.push("/(habit)/CreateHabit")}
         >
           <HStack style={styles.elementsBtn}>
             <HStack style={styles.buttonText}>
               <View style={styles.buttonIcon}>
                 <FontAwesome6
-                  name={icon}
+                  name={icon as FontAwesome6Keys}
                   size={18}
                   color={color}
                 ></FontAwesome6>
@@ -58,20 +57,20 @@ export default function HabitBtn({
     return (
       <View>
         <Button
+          onLongPress={onPress}
           action="secondary"
-          style={{ backgroundColor: "#F0F0F0", height: 50 }}
+          style={{
+            backgroundColor: "#f0f0f0",
+            height: 50,
+          }}
         >
           <HStack style={styles.elementsBtn}>
             <HStack style={styles.buttonText}>
               <View style={styles.buttonIcon}>
-                <FontAwesome6
-                  name={icon}
-                  size={18}
-                  color={color}
-                ></FontAwesome6>
+                <Ionicons name={icon as IoniconsKeys} size={18} color={color} />
               </View>
               <View style={{ flexDirection: "column" }}>
-                <ButtonText>{text}</ButtonText>
+                <Text style={{ fontSize: 14, fontWeight: "bold" }}>{text}</Text>
                 <View style={{ flexDirection: "row", gap: 10 }}>
                   <Text style={{ fontSize: 12, color: "#9B9B9B" }}>{time}</Text>
                   <Text style={{ fontSize: 12, color: "#9B9B9B" }}>
@@ -80,23 +79,25 @@ export default function HabitBtn({
                 </View>
               </View>
             </HStack>
-            <Checkbox size="lg" value="">
-              <CheckboxIndicator>
-                <CheckboxIcon as={CheckIcon} />
-              </CheckboxIndicator>
-            </Checkbox>
+            <Text style={{ fontSize: 12, color: "#9B9B9B" }}>
+              Segure para Editar
+            </Text>
           </HStack>
         </Button>
       </View>
     );
   }
+
   return (
     <View>
       <Button action="secondary" style={{ backgroundColor: "#F0F0F0" }}>
         <HStack style={styles.elementsBtn}>
           <HStack style={styles.buttonText}>
             <View style={styles.buttonIcon}>
-              <FontAwesome6 name={icon} size={18}></FontAwesome6>
+              <FontAwesome6
+                name={icon as FontAwesome6Keys}
+                size={18}
+              ></FontAwesome6>
             </View>
             <ButtonText>{text}</ButtonText>
           </HStack>

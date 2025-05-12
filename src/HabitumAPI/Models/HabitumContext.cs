@@ -2,12 +2,10 @@
 
 namespace HabitumAPI.Models;
 
-public class HabitumContext : DbContext
+public class HabitumContext(DbContextOptions<HabitumContext> options) : DbContext(options)
 {
-    public HabitumContext(DbContextOptions<HabitumContext> options)
-        : base(options)
-    {
-    }
-
     public DbSet<User> Users { get; set; }
+    public DbSet<Habit> Habits { get; set; }
+    public DbSet<ToDo> ToDos { get; set; }
+
 }
